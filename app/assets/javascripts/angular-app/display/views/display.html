@@ -41,6 +41,7 @@
               class="md-primary" ng-disabled="" ng-click="DisplayCtrlVM.changeStatus(orderLineItem.item_id, $index)">
               Done
             </md-button>
+            <span  ng-if="!orderLineItem.total_quantity > 0"> PREPARED </span>
           </div>
         </div>
       </md-card-content>
